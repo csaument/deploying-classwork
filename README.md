@@ -16,7 +16,7 @@ The steps for creating a fork are:
 1. In the terminal, navigate to the local copy of the original repo.
 1. Enter the below commands to modify local settings, replacing the link below with the repo link:
 
-```
+```console
 git remote rename origin upstream
 git remote add origin https://github...git
 git fetch origin
@@ -25,10 +25,39 @@ git fetch origin
 ## Workflow
 Congratulations! You've successfully forked a repo and modified your local connection to this fork, while still preserving access to the original upstream repo. From here, you can deploy through various hosts. Additionally, you can continue to create branches, update your source code, commit changes, and push updates to your fork. You can further control access and control over your repository to collaborate.
 
-### Branches
+### Working on Branches
+Working on a fork looks similar to working on the original project. Create a branch, make additions and changes, stage the files, commit changes, push to origin, and create a pull request. For refresher/reference, these commands are listed below. Simply replace the <> content with appropriate information
+
+* Create a new branch
+```console
+git pull origin main
+git checkout -b <branch-name>
+```
+
+* Continue working on a branch created by another collaborator
+```console
+git pull origin main
+git fetch origin <branch-name>
+git checkout <branch-name>
+git pull origin <branch-name>
+```
+
+* Submit a PR
+```console
+git add <filename>
+git commit -m "<useful message>"
+git push origin <branch-name>
+```
+1. On a browser, navigate to the repo and create a pull request
 
 ### Pushing Upstream
+Perhaps you'd like to recommend a new feature or component to the original repo's owner. Maybe you'd like to update the original repo with all of your shiny, new features.
 
 ### Collaborating
 
 ## Deployment
+
+
+## Further Reading
+* https://docs.github.com/en/get-started/quickstart/fork-a-repo
+* https://render.com/docs/deploy-create-react-app
