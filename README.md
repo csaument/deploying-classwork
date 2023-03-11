@@ -51,7 +51,22 @@ git push origin <branch-name>
 1. On a browser, navigate to the repo and create a pull request
 
 ### Pushing Upstream
-Perhaps you'd like to recommend a new feature or component to the original repo's owner. Maybe you'd like to update the original repo with all of your shiny, new features.
+Perhaps you'd like to recommend a new feature or component to the original repo's owner. Maybe you'd like to update the original repo with all of your shiny, new features. Please note that you'll need write access to submit a PR to the upstream.
+
+* Update from Upstream
+```console
+git checkout main
+git fetch upstream
+git merge upstream/main
+```
+
+* Create a PR on the upstream
+1. Navigate to the upstream repo on your browser
+1. Click Pull Request
+1. Click compare across forks
+1. Under base branch, select the desired upstream branch to merge into
+1. Under head fork, select the forked branch to merge from
+1. Continue to submit your PR as normal
 
 ### Collaborating
 
@@ -60,4 +75,7 @@ Perhaps you'd like to recommend a new feature or component to the original repo'
 
 ## Further Reading
 * https://docs.github.com/en/get-started/quickstart/fork-a-repo
+* https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork
 * https://render.com/docs/deploy-create-react-app
+* https://www.netlify.com/blog/2016/07/22/deploy-react-apps-in-less-than-30-seconds/
+* https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork
