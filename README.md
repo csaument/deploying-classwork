@@ -68,10 +68,24 @@ git merge upstream/main
 1. Under head fork, select the forked branch to merge from
 1. Continue to submit your PR as normal
 
-### Collaborating
+## Collaborating
+See below link for GitHub's description of permission levels.
 
 ## Deployment
 
+### Deploying with Render
+
+1. Create an account on Render (recommend linking your GitHub account directly)
+1. Choose whether to share all or select repos
+1. Navigate to the repo on Render's website
+1. Click create static site, and follow the default prompts
+1. Use the hyperlink provided to access and share your deployed site
+
+### Deploying with Netlify
+
+1. Create an account on Netlify (recommend creating a new team for each project)
+1. Provide Netlify with access to your repo
+1. 
 
 ## Further Reading
 * https://docs.github.com/en/get-started/quickstart/fork-a-repo
@@ -79,3 +93,4 @@ git merge upstream/main
 * https://render.com/docs/deploy-create-react-app
 * https://www.netlify.com/blog/2016/07/22/deploy-react-apps-in-less-than-30-seconds/
 * https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork
+* https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/repository-roles-for-an-organization
