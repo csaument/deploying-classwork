@@ -85,7 +85,7 @@ See below link for GitHub's description of permission levels.
 
 1. Create an account on Netlify (recommend creating a new team for each project)
 1. Provide Netlify with access to your repo
-1. 
+1. ** Pending update **
 
 ## Further Reading
 * https://docs.github.com/en/get-started/quickstart/fork-a-repo
