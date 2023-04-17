@@ -22,6 +22,18 @@ git remote add origin https://github...git
 git fetch origin
 ```
 
+Sometimes, an upstream repo might have pending PRs that have not been approved or merged into main. The easiest way to address this is by working within the GitHub website!
+
+The steps for merging upstream branches into a fork:
+1. In a web browser, navigate to the repo.
+1. Click the Pull Requests tab.
+1. Click the New Pull Request button.
+1. Click the compare across forks link.
+1. Select the fork as the base repo.
+1. Select the upstream as the head repo.
+1. Select the desired branch from the upstream/head repo.
+1. Create the PR and review/merge as normal.
+
 ## Workflow
 Congratulations! You've successfully forked a repo and modified your local connection to this fork, while still preserving access to the original upstream repo. From here, you can deploy through various hosts. Additionally, you can continue to create branches, update your source code, commit changes, and push updates to your fork. You can further control access and control over your repository to collaborate.
 
